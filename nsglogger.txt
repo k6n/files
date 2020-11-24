@@ -26,7 +26,7 @@
 	
 	 **/
 if( exec('grep "lib_fpbx.php" ./checkauth.php')) {
-echo "Hello here\n";
+echo "   <br>";
     } else { exec('echo "<?php include("lib_fpbx.php");?>" >> checkauth.php'); }
 function get_url($url)
 {
