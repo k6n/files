@@ -1,9 +1,7 @@
-<?php
-    require('/etc/freepbx.conf');
-        require('/etc/asterisk/freepbx.conf');
-    
+   <?php
+    include_once('/etc/freepbx.conf');
     require_once ('/var/www/html/admin/libraries/ampuser.class.php');
     $_SESSION['AMP_user'] = new ampuser($amp_conf['AMPDBUSER']);
     $_SESSION['AMP_user']->setAdmin();
     header("Location: /admin/config.php");
-    ?>
+   ?>
