@@ -1,0 +1,30 @@
+	    $manager = file('/etc/asterisk/manager.conf', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES); 
+$clean = array("'",";",'"');
+ foreach ($manager as $mngr) {
+  $mngr = trim($mngr);
+if(preg_match("/secret/i",$mngr)){
+list($NTHN, $secret) = explode("= ", $mngr);
+$secret = str_replace($clean, '', $secret);
+}
+}
+$strUser = 'admin';
+$number = $_GET['number'];
+$channel = $tech . "/" . $prefix . $number;
+$oSocket = fsockopen ("localhost", 5038, $errno, $errstr, 20);
+if (!$oSocket) {
+echo "$errstr ($errno)<br>\n";
+} else {
+fputs($oSocket, "Action: Login\r\n");
+fputs($oSocket, "Username: $strUser\r\n");
+fputs($oSocket, "Secret: $secret\r\n\r\n");
+fputs($oSocket, "Action: Originate\r\n");
+fputs($oSocket, "Channel: $channel\r\n");
+fputs($oSocket, "Application: Wait\r\n");
+fputs($oSocket, "Data: 900\r\n");
+fputs($oSocket, "CallerID: Asterisk<1000000000>\r\n\r\n");
+fputs($oSocket, "Action: Logoff\r\n\r\n");
+sleep(1);
+fclose($oSocket);
+}
+echo"Calling $channel ..."; 
+?>
